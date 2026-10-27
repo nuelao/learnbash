@@ -1,3 +1,4 @@
 Ubuntu release: 26.4
 Username: usb88142
 Workspace: /home/usb88142
+Machine: Windows
