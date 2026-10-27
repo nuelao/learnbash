@@ -1,0 +1,27 @@
+Brace Expansion in Bash
+This is a shortcut for generating multiple words, filenames, or paths without typing them all out.
+
+Instead of writing:
+file1.txt file2.txt file3.txt
+
+Write:
+file{1,2,3}.txt
+
+To create multiple files:
+touch report{1,2,3}.txt
+``
+Making Directories:
+mkdir -p project/{src,bin,docs,tests}
+
+Creating numbered pages: (Use "..")
+mkdir project{1..5}
+
+Combining braces: (Use "..")
+echo {dev,test,prod}-{01..03} gives
+
+dev-01 dev-02 dev-03
+test-01 test-02 test-03
+prod-01 prod-02 prod-03
+
+Wildcard expansion
+echo *.txt - shows .txt files that actually exist.
