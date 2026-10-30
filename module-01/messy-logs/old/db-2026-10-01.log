@@ -1,0 +1,8 @@
+2026-10-01 01:15:00 db INFO message-1
+2026-10-01 02:15:00 db INFO message-2
+2026-10-01 03:15:00 db WARN message-3
+2026-10-01 04:15:00 db INFO message-4
+2026-10-01 05:15:00 db ERROR message-5
+2026-10-01 06:15:00 db INFO message-6
+2026-10-01 07:15:00 db ERROR message-7
+2026-10-01 08:15:00 db ERROR message-8

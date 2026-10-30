@@ -1,0 +1,19 @@
+1. find . -name "*.log" | wc -l
+2. find . -type d | wc -l
+3. cat ./*/*.log | wc -l
+
+4. grep "ERROR" ./*/*.log
+5. grep "ERROR" ./*/*.log | cut -d " " -f 1 | sort | uniq -c
+6. grep "ERROR" ./*/*.log | cut -d "/" -f 2 | sort | uniq -c
+
+7. find . -name "*.tmp" then I ran rm ./tmp/junk{1..3}.tmp
+8. mv ./*/*01.log ./old
+9. tree ~/bash-course/module-01/messy-logs
+
+10. grep "ERROR" */*{02..03}.log | sort > error-report.txt
+11. grep "ERROR" */*{02..03}.log | cut -d " " -f 1 | sort | uniq -c > error-per-file.txt
+12. chmod 600 error-report.txt
+13. ls does-not-exist 2> problems.txt
+
+14. nano solution-notes.txt
+

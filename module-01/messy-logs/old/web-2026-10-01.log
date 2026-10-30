@@ -1,0 +1,8 @@
+2026-10-01 01:15:00 web WARN message-1
+2026-10-01 02:15:00 web INFO message-2
+2026-10-01 03:15:00 web ERROR message-3
+2026-10-01 04:15:00 web ERROR message-4
+2026-10-01 05:15:00 web ERROR message-5
+2026-10-01 06:15:00 web INFO message-6
+2026-10-01 07:15:00 web INFO message-7
+2026-10-01 08:15:00 web ERROR message-8

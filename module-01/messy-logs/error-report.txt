@@ -1,0 +1,10 @@
+./app/app-2026-10-02.log:2026-10-02 04:15:00 app ERROR message-4
+./app/app-2026-10-02.log:2026-10-02 05:15:00 app ERROR message-5
+./app/app-2026-10-03.log:2026-10-03 01:15:00 app ERROR message-1
+./app/app-2026-10-03.log:2026-10-03 02:15:00 app ERROR message-2
+./app/app-2026-10-03.log:2026-10-03 04:15:00 app ERROR message-4
+./db/db-2026-10-02.log:2026-10-02 07:15:00 db ERROR message-7
+./web/web-2026-10-02.log:2026-10-02 06:15:00 web ERROR message-6
+./web/web-2026-10-03.log:2026-10-03 02:15:00 web ERROR message-2
+./web/web-2026-10-03.log:2026-10-03 07:15:00 web ERROR message-7
+./web/web-2026-10-03.log:2026-10-03 08:15:00 web ERROR message-8
