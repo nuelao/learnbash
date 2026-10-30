@@ -1,0 +1,59 @@
+2026-10-30T09:42:01Z web01 systemd[1]: Started nginx.service.
+
+2026-10-30T09:42:15Z web01 nginx: 192.168.1.45 - - [30/Oct/2026:09:42:15 +0000] "GET / HTTP/1.1" 200 6123 "-" "Mozilla/5.0"
+
+2026-10-30T09:42:18Z web01 nginx: 192.168.1.45 - - [30/Oct/2026:09:42:18 +0000] "GET /favicon.ico HTTP/1.1" 404 153 "-" "Mozilla/5.0"
+
+2026-10-30T09:43:02Z web01 app[2456]: INFO User 'j.smith' logged in successfully
+
+2026-10-30T09:43:15Z web01 app[2456]: WARNING Disk usage on /var reached 82%
+
+2026-10-30T09:44:01Z web01 auth: Failed password for invalid user admin from 203.0.113.15 port 52144 ssh2
+
+2026-10-30T09:44:05Z web01 auth: Failed password for invalid user root from 203.0.113.15 port 52146 ssh2
+
+2026-10-30T09:44:11Z web01 kernel: Firewall blocked connection from 203.0.113.15 to port 22
+
+2026-10-30T09:45:22Z web01 nginx: 198.51.100.22 - - [30/Oct/2026:09:45:22 +0000] "GET /admin HTTP/1.1" 403 178 "-" "Mozilla/5.0"
+
+2026-10-30T09:46:18Z web01 app[2456]: ERROR Database connection timeout after 30 seconds
+
+2026-10-30T09:46:19Z web01 app[2456]: ERROR Failed to retrieve customer record id=10482
+
+2026-10-30T09:46:20Z web01 app[2456]: ERROR Transaction rolled back
+
+2026-10-30T09:47:01Z web01 mysql[881]: ERROR Too many connections
+
+2026-10-30T09:47:03Z web01 mysql[881]: WARNING Connection pool at 95% capacity
+
+2026-10-30T09:48:11Z web01 nginx: [error] 2451#2451: *102 open() "/var/www/html/images/logo.png" failed (2: No such file or directory), client: 192.168.1.50
+
+2026-10-30T09:49:38Z web01 kernel: Out of memory: Killed process 3148 (java) total-vm:4096000kB
+
+2026-10-30T09:49:41Z web01 app[2456]: CRITICAL Application terminated unexpectedly
+
+2026-10-30T09:50:00Z web01 systemd[1]: app.service: Main process exited, code=exited, status=1/FAILURE
+
+2026-10-30T09:50:00Z web01 systemd[1]: app.service: Failed with result 'exit-code'.
+
+2026-10-30T09:50:02Z web01 systemd[1]: app.service: Scheduled restart job, restart counter is 3.
+
+2026-10-30T09:50:05Z web01 systemd[1]: Started app.service.
+
+2026-10-30T09:50:08Z web01 app[3188]: INFO Service startup complete
+
+2026-10-30T09:51:15Z web01 nginx: 192.168.1.45 - - [30/Oct/2026:09:51:15 +0000] "POST /api/orders HTTP/1.1" 500 1024 "-" "curl/8.5.0"
+
+2026-10-30T09:51:15Z web01 app[3188]: ERROR NullPointerException while processing order ORD-99214
+
+2026-10-30T09:52:01Z web01 cron[4561]: (root) CMD (/usr/local/bin/backup.sh)
+
+2026-10-30T09:52:04Z web01 backup.sh: ERROR Backup destination unavailable
+
+2026-10-30T09:52:04Z web01 backup.sh: Backup job failed
+
+2026-10-30T09:53:17Z web01 kernel: EXT4-fs warning (device sda1): ext4_end_bio: I/O error writing to inode 18274
+
+2026-10-30T09:53:25Z web01 smartd[783]: Device: /dev/sda, FAILED SMART self-check. Disk failure predicted.
+
+2026-10-30T09:54:40Z web01 systemd[1]: Entering emergency mode.
