@@ -1,7 +1,7 @@
 #!/bin/bash
 set -eu
 
-#diskreport.sh: Prints a directory space report.
+#diskreport.sh: Prints a space report of a directory.
 
 #set variables
 machine=$(hostname)
