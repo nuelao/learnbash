@@ -1,0 +1,155 @@
+grep -q
+
+-q = quiet mode
+
+Checks whether a pattern exists without displaying any matches.
+
+Example:
+
+grep -q "ERROR" app.log
+
+Used mainly in scripts with if statements.
+
+Exit codes:
+0 = match found
+1 = no match found
+
+
+exit N (exit codes)
+
+- Stops the script immediately.
+- Returns exit code N to the shell.
+- 0 = success.
+- Non-zero = error or special status.
+
+Example:
+
+exit 3
+
+After the script finishes:
+
+echo $?
+
+Output:
+
+3
+
+it returns the code as the script's status so other commands or scripts can detect what happened.
+
+
+
+
+
+
+
+.bak = backup file
+
+Used to store a copy of a file before changes are made.
+
+Example:
+
+report.txt
+report.txt.bak
+
+If the original file is lost or modified incorrectly,
+the .bak file can be used to restore it.
+
+
+
+
+
+
+
+export PATH="$HOME/bin:$PATH"
+
+- Adds ~/bin to PATH.
+- PATH is the list of directories Bash searches for commands.
+- export makes the change available to the current shell.
+- :$PATH keeps all existing command locations.
+
+Result:
+Scripts stored in ~/bin can be run by name from anywhere.
+
+
+export PATH="$HOME/bin:$PATH" - This line allows the script to work anywhere on the terminal but limited to the current terminal session.
+
+To make it permanent:
+As long as the script is in ~/bin, executable, and ~/bin is on my PATH, I can run it from anywhere and the setup remains permanent across terminal sessions. ✅
+
+
+
+
+
+
+
+
+df = Disk Free
+
+df -h
+
+Shows disk usage for all mounted filesystems.
+
+Columns:
+Filesystem = storage device
+Size = total size
+Used = used space
+Avail = free space
+Use% = percentage used
+Mounted on = location in Linux
+
+Important entries:
+
+/dev/sdd = Linux filesystem
+(C:) = Windows C: drive (/mnt/c)
+
+Useful for checking available disk space and identifying full disks.
+
+
+df = How much space is available on the drive?
+du = How much space is this directory using?
+
+
+
+
+
+
+
+
+
+sort
+ Sorts alphabetically.
+
+sort -n
+ Sorts numerically.
+
+sort -h
+ Sorts human-readable sizes (K, M, G).
+
+sort -hr
+ Sorts sizes from largest to smallest.
+
+
+
+
+
+
+
+
+
+free -h
+
+Shows memory (RAM) usage.
+
+Columns:
+total = total RAM
+used = RAM currently in use
+free = completely unused RAM
+shared = shared memory
+buff/cache = memory used for caching
+available = RAM available for new programs
+
+Swap:
+Backup memory on disk used if RAM fills up.
+
+Conclusion:
+Memory usage is very low and there is plenty of available RAM.
