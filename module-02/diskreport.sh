@@ -22,7 +22,7 @@ dir_size=$(du -sh "$directory")
 
 #Ranking 5 biggest in the directory
 
-size_rank=$(du -h --max-depth=2 "$directory" | sort -hr | head -n "$num_of_big_items")
+size_rank=$(du -ha --max-depth=2 "$directory" | sort -hr | head -n "$num_of_big_items")
 
 
 
