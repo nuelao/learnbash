@@ -6,22 +6,23 @@ set -eu
 #set variables
 machine=$(hostname)
 user=$(whoami)
-date=$(date "+%F %T")
+report_date=$(date "+%F %T")
 directory=${1:-~}
-uptime=$(uptime -p)
+pc_uptime=$(uptime -p)
 num_of_big_items=${2:-5}
 
 #Free space on this disk
 free_space=$(df -h "$directory")
 
-#show memory on disk
+#show memory
 memory=$(free -th)
 
 #Size of a directory
 dir_size=$(du -sh "$directory")
 
 #Ranking 5 biggest in the directory
-size_rank=$(du -sh "$directory"/* | cut -d " " -f 1 | sort -hr | head -n "$num_of_big_items")
+
+size_rank=$(du -h --max-depth=2 "$directory" | sort -hr | head -n "$num_of_big_items")
 
 
 
@@ -29,9 +30,9 @@ size_rank=$(du -sh "$directory"/* | cut -d " " -f 1 | sort -hr | head -n "$num_o
 echo "=========================Disk Report=========================="
 echo "Machine:	$machine"
 echo "User: $user"
-echo "Date: $date"
+echo "Date: $report_date"
 echo "Directory: $directory"
-echo "Uptime: $uptime"
+echo "Uptime: $pc_uptime"
 
 echo "=================Free Space on this disk=================="
 echo "$free_space"
